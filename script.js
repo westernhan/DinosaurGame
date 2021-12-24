@@ -80,7 +80,6 @@ function handleLose() {
   endGame()
   setTimeout(() => {
     document.addEventListener("keydown", handleStart, { once: true })
-    startScreenElem.classList.remove("hide")
   }, 100)
 }
 
