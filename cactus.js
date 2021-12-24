@@ -13,6 +13,7 @@ import { setCustomProperty, incrementCustomProperty, getCustomProperty } from ".
     })
   }
   
+  //randomly create cactus on ground 
   export function updateCactus(delta, speedScale) {
     document.querySelectorAll("[data-cactus]").forEach(cactus => {
       incrementCustomProperty(cactus, "--left", delta * speedScale * SPEED * -1)
@@ -34,6 +35,7 @@ import { setCustomProperty, incrementCustomProperty, getCustomProperty } from ".
     })
   }
   
+  // create cactus
   function createCactus() {
     const cactus = document.createElement("img")
     cactus.dataset.cactus = true
@@ -43,6 +45,7 @@ import { setCustomProperty, incrementCustomProperty, getCustomProperty } from ".
     worldElem.append(cactus)
   }
   
+  //random generated time for cactus to appear
   function randomNumberBetween(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
   }

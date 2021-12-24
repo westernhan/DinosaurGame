@@ -63,6 +63,8 @@ body {
   bottom: 0;
 }
 
+
+/* End Game */
 .winning-message{
   display: none;
   position: fixed;

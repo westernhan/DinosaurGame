@@ -37,6 +37,7 @@ export function setDinoLose() {
   dinoElem.src = "imgs/dino-lose.png"
 }
 
+//dinosaur run frame
 function handleRun(delta, speedScale) {
   if (isJumping) {
     dinoElem.src = `imgs/dino-stationary.png`
@@ -51,6 +52,7 @@ function handleRun(delta, speedScale) {
   currentFrameTime += delta * speedScale
 }
 
+//jump logic 
 function handleJump(delta) {
   if (!isJumping) return
 
@@ -64,6 +66,7 @@ function handleJump(delta) {
   yVelocity -= GRAVITY * delta
 }
 
+//jump on space input
 function onJump(e) {
   if (e.code !== "Space" || isJumping) return
 

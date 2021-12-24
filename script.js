@@ -83,6 +83,7 @@ function handleLose() {
   }, 100)
 }
 
+//set width and height of game
 function setPixelToWorldScale() {
   let worldToPixelScale
   if (window.innerWidth / window.innerHeight < WORLD_WIDTH / WORLD_HEIGHT) {
@@ -95,9 +96,9 @@ function setPixelToWorldScale() {
   worldElem.style.height = `${WORLD_HEIGHT * worldToPixelScale}px`
 }
 
+//end game display
 function endGame() {
   score = Math.floor(score)
   winningMessageTextElement.innerText = `SCORE: ${score}`
-
   winningMessageElement.classList.add('show')
 }
