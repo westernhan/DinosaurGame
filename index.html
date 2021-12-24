@@ -20,9 +20,11 @@
 <body>
   <div class="audio">
     <img src="imgs/mute.png" style ="height: 50px; width: 100px;"onclick="toggleSound()"></button>
-    <!-- add audio -->
-    <audio src="" preload="auto" loop="true" autoplay="true" id="music">
+    <!-- Quick Made Arrangement -->
+    <audio src="./audio/nonamemix.mp3" preload="auto" loop="true" autoplay="true" id="music">
   </div>
+
+  <!-- Dinosaur World-->
   <div class="world" data-world>
     <div class="score" data-score>0</div>
     <div class="start-screen" data-start-screen>Press Any Key To Start</div>
@@ -30,6 +32,8 @@
     <img src="imgs/ground.png" class="ground" data-ground>
     <img src="imgs/dino-stationary.png" class="dino" data-dino>
   </div>
+  
+  <!-- End Game -->
   <div class="winning-message" id="winningMessage">
     <div data-winning-message-text>Score</div>
     <div data-winning-message-text>Press Any Key To Start</div>
